@@ -61,7 +61,7 @@ export const Project = ({ project }: ProjectProps) => {
             {project.tech.map((tech) => (
               <span
                 key={tech.name}
-                className={`text-xs px-2 py-1 rounded-full bg-${tech.color}-500 text-white`}
+                className={`text-xs px-2 py-1 rounded-full ${tech.color} text-white`}
               >
                 {tech.name}
               </span>

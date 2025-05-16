@@ -4,13 +4,11 @@ import { useTheme } from '../context/ThemeContext';
 
 interface PhotoCardProps {
   image: string;
-  date: string;
-  location: string;
   caption: string;
   isMobile: boolean;
 }
 
-const PhotoCard = ({ image, date, location, caption, isMobile }: PhotoCardProps) => {
+const PhotoCard = ({ image, caption, isMobile }: PhotoCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const { currentTheme } = useTheme();
 
@@ -60,9 +58,7 @@ const PhotoCard = ({ image, date, location, caption, isMobile }: PhotoCardProps)
           style={{ backgroundColor: currentTheme.bg.secondary }}
         >
           <div className="text-center space-y-3">
-            <p className="text-sm text-gray-500 dark:text-gray-400">{date}</p>
-            <p className="font-medium">{location}</p>
-            <p className="text-sm">{caption}</p>
+            <p className="font-medium">{caption}</p>
           </div>
         </div>
       </motion.div>

@@ -38,12 +38,6 @@ export default {
     'bg-green-500',
     'bg-red-500',
 
-    // Hobby text colors
-    {
-      pattern: /text-(rose|blue|green|purple)-500/,
-      variants: ['dark']
-    },
-
     // Project tech tag colors - solid backgrounds
     {
       pattern: /bg-(blue|cyan|green|emerald|sky|purple|neutral|indigo|violet|amber|red|yellow|black|orange)-500/,

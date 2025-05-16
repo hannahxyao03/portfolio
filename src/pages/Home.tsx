@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div>
       <FadeInSection>
-        <section className="space-y-4">
+        <section className="space-y-4 mb-8">
           <motion.div
             className="text-2xl sm:text-3xl font-bold"
             initial={{ opacity: 0, y: 20 }}

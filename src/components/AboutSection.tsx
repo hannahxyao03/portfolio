@@ -55,7 +55,7 @@ export const AboutSection = () => {
               </motion.h2>
               {section.title === "Timeline" ? (
                 <div className="relative pl-4 pt-4">
-                  <div className="absolute left-0 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700" />
+                  <div className="absolute left-0 top-0 bottom-0 w-px bg-[#6B7280] dark:bg-[#9CA3AF]" />
                   {section.content}
                 </div>
               ) : (
