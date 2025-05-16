@@ -4,21 +4,12 @@ import { Project } from '../components/Project';
 const projects = [
   {
     title: "mywellnessdiary",
-    description: "add description here",
+    description: "iOS app for tracking food and fitness goals",
     tech: [
       { name: "Swift", color: "bg-[#D86072]" }
     ],
     link: "https://github.com/hannahxyao03/mywellnessdiary",
-    previewImage: "https://personal-site-phi-snowy.vercel.app/assets/cypherchat-7f589c33.png"
-  },
-  {
-    title: "more coming soon!",
-    description: "add description here",
-    tech: [
-      { name: "Java", color: "bg-[#9B7EBD]" }
-    ],
-    link: "https://github.com/hannahxyao03",
-    previewImage: "https://personal-site-phi-snowy.vercel.app/assets/soleexchange1-40b3b5a8.png"
+    previewImage: "https://raw.githubusercontent.com/hannahxyao03/portfolio/refs/heads/main/src/assets/images/mwd-preview.jpg"
   }
 ];
 
@@ -32,21 +23,21 @@ export const sections = [
               company: "National Australia Bank",
               date: "Jan 2024 - Now",
               title: "Associate Software Engineer",
-              description: ["add description here"],
+              description: "Building Java microservices for payments orchestration using cloud-native tools and distributed systems",
               dotColor: "bg-[#D86072]"
             },
             {
               company: "Monash University",
               date: "Feb 2021 - Nov 2024",
-              title: "B.S. Computer Science",
-              description: ["add description here"],
+              title: "Bachelor of Computer Science",
+              description: "Advanced Computer Science Major",
               dotColor: "bg-[#90C67C]"
             },
             {
               company: "National Australia Bank",
               date: "Jan 2023 - Dec 2023",
               title: "Software Engineer Intern",
-              description: ["add description here"],
+              description: "",
               dotColor: "bg-[#80C4E9]"
             }
           ].map((item) => (
@@ -64,11 +55,11 @@ export const sections = [
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 sm:mt-0">{item.date}</p>
                 </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400 italic">{item.title}</p>
-                <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-1 space-y-1">
-                  {item.description.map((desc, idx) => (
-                    <li key={idx}>{desc}</li>
-                  ))}
-                </ul>
+                {item.description !== "" && (
+                  <div className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-1 space-y-1">
+                    <p>{item.description}</p>
+                  </div>
+                )}
               </motion.div>
             </div>
           ))}

@@ -21,6 +21,15 @@ const Footer = () => {
       ),
     },
     {
+      name: 'Resume',
+      url: 'https://raw.githubusercontent.com/hannahxyao03/portfolio/refs/heads/main/src/assets/resume.pdf',
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M24.707,8.793l-6.5-6.5C18.019,2.105,17.765,2,17.5,2H7C5.895,2,5,2.895,5,4v22c0,1.105,0.895,2,2,2h16c1.105,0,2-0.895,2-2 V9.5C25,9.235,24.895,8.981,24.707,8.793z M18,21h-8c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h8c0.552,0,1,0.448,1,1 C19,20.552,18.552,21,18,21z M20,17H10c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1C21,16.552,20.552,17,20,17 z M18,10c-0.552,0-1-0.448-1-1V3.904L23.096,10H18z"></path>
+        </svg>
+      ),
+    },
+    {
       name: 'Email',
       url: 'mailto:hannahxyao03@gmail.com',
       icon: (
@@ -29,7 +38,7 @@ const Footer = () => {
           <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
         </svg>
       ),
-    },
+    }
   ];
 
   return (
