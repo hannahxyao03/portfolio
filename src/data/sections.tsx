@@ -23,7 +23,7 @@ export const sections = [
               company: "National Australia Bank",
               date: "Jan 2024 - Now",
               title: "Associate Software Engineer",
-              description: "Building Java microservices for payments orchestration using cloud-native tools and distributed systems",
+              description: "Building event-driven Java microservices for payments orchestration using cloud-native tools",
               dotColor: "bg-[#D86072]"
             },
             {

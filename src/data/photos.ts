@@ -1,7 +1,7 @@
 export const photos = [
   {
     image: "https://raw.githubusercontent.com/hannahxyao03/portfolio/refs/heads/main/src/assets/images/1.jpeg",
-    caption: "me",
+    caption: "my graduation ceremony!",
     style: "sm:top-4 sm:left-[-15%] top-2 left-2 rotate-[-6deg] z-10"
   },
   {
