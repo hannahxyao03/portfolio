@@ -10,7 +10,7 @@ interface PhotoGalleryProps {
 export const PhotoGallery = ({ isMobile }: PhotoGalleryProps) => {
   const baseZIndex = 10;
   const getZIndex = (index: number) => baseZIndex + index;
-  const displayPhotos = isMobile ? photos.slice(0, 2) : photos;
+  const displayPhotos = isMobile ? photos.slice(0, 1) : photos;
 
   return (
     <motion.div

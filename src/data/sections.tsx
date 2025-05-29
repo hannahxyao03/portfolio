@@ -8,7 +8,7 @@ const projects = [
     tech: [
       { name: "Swift", color: "bg-[#D86072]" }
     ],
-    link: "https://github.com/hannahxyao03/mywellnessdiary",
+    link: "https://github.com/hannahxyao03",
     previewImage: "https://raw.githubusercontent.com/hannahxyao03/portfolio/refs/heads/main/src/assets/images/mwd-preview.jpg"
   }
 ];
